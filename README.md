@@ -1,10 +1,9 @@
-# The Namegame: C#/Xamarin
+# The Namegame: C# / Xamarin
 
-Leading scientists have proven, via science, that learning your coworkers names while starting a new job is useful. Your test project is to make it happen! The api is located at [http://api.namegame.willowtreemobile.com/](http://api.namegame.willowtreemobile.com/).
+Leading scientists have proven, via science, that learning your coworkers names while starting a new job is useful. Your test project is to make it happen! The api is located at [https://www.willowtreeapps.com/api/v1.0/profiles](https://www.willowtreeapps.com/api/v1.0/profiles).
+
 
 ## Your mission
-
-Present the user with six faces and ask them to identify the listed name. 
 
 We're only asking you to implement this on one of the platforms (iOS, Android, or UWP), but you are welcome to do as many as you'd like. All of the projects are already set up with MVVMCross to make working with multiple platforms easier, but you are welcome to remove it if you'd like to use something different.
 

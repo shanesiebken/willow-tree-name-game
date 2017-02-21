@@ -9,16 +9,11 @@ using WillowTree.NameGame.Core.Models;
 
 namespace WillowTree.NameGame.Core.Services
 {
-    public interface INameGameService
+    public class NameGameService
     {
-        Task<Person[]> GetPeople();
-    }
+		private static readonly string DataUrl = "https://www.willowtreeapps.com/api/v1.0/profiles";
 
-    public class NameGameService : INameGameService
-    {
-        private static readonly string DataUrl = "http://api.namegame.willowtreemobile.com";
-
-        public async Task<Person[]> GetPeople()
+        public async Task<Profile[]> GetProfiles()
         {
             return null;
         }

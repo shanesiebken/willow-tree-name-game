@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using MvvmCross.Core.ViewModels;
@@ -11,11 +13,16 @@ namespace WillowTree.NameGame.Core.ViewModels
 {
     public class MainViewModel : MvxViewModel
     {
-        private INameGameService _service;
+        private NameGameService _service;
 
-        public MainViewModel(INameGameService service)
+		public MainViewModel()
         {
-            _service = service;
+            _service = new NameGameService();
+        }
+
+        public override async void Start()
+        {
+            base.Start();
         }
     }
 }
