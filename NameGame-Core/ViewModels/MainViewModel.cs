@@ -7,17 +7,25 @@ using System.Text;
 using System.Threading.Tasks;
 using MvvmCross.Core.ViewModels;
 using WillowTree.NameGame.Core.Models;
-using WillowTree.NameGame.Core.Services;
+using WillowTree.NameGame.Core.Interfaces;
 
 namespace WillowTree.NameGame.Core.ViewModels
 {
     public class MainViewModel : MvxViewModel
     {
-        private NameGameService _service;
+        private INameGameService _nameGameService;
 
-		public MainViewModel()
+        public NameGameViewModel NameGameViewModel;
+        public MatModeViewModel MatModeViewModel;
+        public ReverseNameGameViewModel ReverseNameGameViewModel;
+
+        public MainViewModel(INameGameService nameGameService)
         {
-            _service = new NameGameService();
+            _nameGameService = nameGameService;
+
+            NameGameViewModel = new NameGameViewModel();
+            MatModeViewModel = new MatModeViewModel();
+            ReverseNameGameViewModel = new ReverseNameGameViewModel();
         }
 
         public override async void Start()

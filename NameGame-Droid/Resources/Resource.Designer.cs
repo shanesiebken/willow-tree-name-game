@@ -47,6 +47,29 @@ namespace WillowTree.NameGame.Droid
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView = global::WillowTree.NameGame.Droid.Resource.Styleable.MvxListView;
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::WillowTree.NameGame.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxItemTemplate = global::WillowTree.NameGame.Droid.Resource.Styleable.MvxListView_MvxItemTemplate;
+			global::MvvmCross.Droid.Support.Core.UI.Resource.String.library_name = global::WillowTree.NameGame.Droid.Resource.String.library_name;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Attribute.MvxBind = global::WillowTree.NameGame.Droid.Resource.Attribute.MvxBind;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Attribute.MvxDropDownItemTemplate = global::WillowTree.NameGame.Droid.Resource.Attribute.MvxDropDownItemTemplate;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Attribute.MvxGroupItemTemplate = global::WillowTree.NameGame.Droid.Resource.Attribute.MvxGroupItemTemplate;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Attribute.MvxItemTemplate = global::WillowTree.NameGame.Droid.Resource.Attribute.MvxItemTemplate;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Attribute.MvxLang = global::WillowTree.NameGame.Droid.Resource.Attribute.MvxLang;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Attribute.MvxSource = global::WillowTree.NameGame.Droid.Resource.Attribute.MvxSource;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Attribute.MvxTemplate = global::WillowTree.NameGame.Droid.Resource.Attribute.MvxTemplate;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Id.MvvmCrossTagId = global::WillowTree.NameGame.Droid.Resource.Id.MvvmCrossTagId;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Id.MvxBindingTagUnique = global::WillowTree.NameGame.Droid.Resource.Id.MvxBindingTagUnique;
+			global::MvvmCross.Droid.Support.Fragment.Resource.String.library_name = global::WillowTree.NameGame.Droid.Resource.String.library_name;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Styleable.MvxBinding = global::WillowTree.NameGame.Droid.Resource.Styleable.MvxBinding;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Styleable.MvxBinding_MvxBind = global::WillowTree.NameGame.Droid.Resource.Styleable.MvxBinding_MvxBind;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Styleable.MvxBinding_MvxLang = global::WillowTree.NameGame.Droid.Resource.Styleable.MvxBinding_MvxLang;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Styleable.MvxControl = global::WillowTree.NameGame.Droid.Resource.Styleable.MvxControl;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Styleable.MvxControl_MvxTemplate = global::WillowTree.NameGame.Droid.Resource.Styleable.MvxControl_MvxTemplate;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Styleable.MvxExpandableListView = global::WillowTree.NameGame.Droid.Resource.Styleable.MvxExpandableListView;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate = global::WillowTree.NameGame.Droid.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Styleable.MvxImageView = global::WillowTree.NameGame.Droid.Resource.Styleable.MvxImageView;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Styleable.MvxImageView_MvxSource = global::WillowTree.NameGame.Droid.Resource.Styleable.MvxImageView_MvxSource;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Styleable.MvxListView = global::WillowTree.NameGame.Droid.Resource.Styleable.MvxListView;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::WillowTree.NameGame.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Styleable.MvxListView_MvxItemTemplate = global::WillowTree.NameGame.Droid.Resource.Styleable.MvxListView_MvxItemTemplate;
 		}
 		
 		public partial class Attribute
@@ -102,11 +125,17 @@ namespace WillowTree.NameGame.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f040000
-			public const int MvvmCrossTagId = 2130968576;
+			// aapt resource value: 0x7f050000
+			public const int MvvmCrossTagId = 2131034112;
 			
-			// aapt resource value: 0x7f040001
-			public const int MvxBindingTagUnique = 2130968577;
+			// aapt resource value: 0x7f050001
+			public const int MvxBindingTagUnique = 2131034113;
+			
+			// aapt resource value: 0x7f050003
+			public const int content_frame = 2131034115;
+			
+			// aapt resource value: 0x7f050002
+			public const int drawer_layout = 2131034114;
 			
 			static Id()
 			{
@@ -137,11 +166,14 @@ namespace WillowTree.NameGame.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f050001
-			public const int ApplicationName = 2131034113;
+			// aapt resource value: 0x7f040002
+			public const int ApplicationName = 2130968578;
 			
-			// aapt resource value: 0x7f050000
-			public const int Hello = 2131034112;
+			// aapt resource value: 0x7f040001
+			public const int Hello = 2130968577;
+			
+			// aapt resource value: 0x7f040000
+			public const int library_name = 2130968576;
 			
 			static String()
 			{
