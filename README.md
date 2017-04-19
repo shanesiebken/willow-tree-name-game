@@ -30,3 +30,11 @@ When reviewing your project, we will be focusing on the following areas:
 Note: Feel free to include a text file describing your thoughts and approach if you feel that's appropriate. 
 
 Good luck and have fun!
+
+## My Approach:
+I approached this project with the goal of establishing a strong data-binding relationship that allowed for functionality such a binding-driven animations based on click events.
+This goal required the creation of custom android views, which responded to changes in the underlying data-contexts to produce color filter animations on top of images.
+Additionally, I set out to provide a clean and self-evident navigation and interface to allow users to pick up the app and use it without needing excessive trial-and-error or tutorials.
+My approach to supporting various viewport types was to utilize android's support of alternative layout folders to automatically choose layouts based on viewport characteristics.
+This approach to viewport support required a small bit of checking within the attached data-contexts to prevent view flushing which would reset the view anytime it needed to reload for any reason.
+I believe my work on this project ended with a strong application with an intuitive interface and high usability to the end user trying to learn the names of his/her co-workers.
