@@ -24,9 +24,18 @@ namespace WillowTree.NameGame.Droid.Views.Fragments
         }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
-        {
+        { 
             var ignored = base.OnCreateView(inflater, container, savedInstanceState);
-            return this.BindingInflate(Resource.Layout.fragment_name_game, null);
+            //Pick the view based on what type of quiz we're playing
+            if (!ViewModel.Reverse)
+                return this.BindingInflate(Resource.Layout.fragment_name_game, null);
+            return this.BindingInflate(Resource.Layout.fragment_reverse_name_game, null);
+        }
+
+        public override void OnViewCreated(View view, Bundle savedInstanceState)
+        {
+            ViewModel.Start();
+            base.OnViewCreated(view, savedInstanceState);
         }
     }
 }

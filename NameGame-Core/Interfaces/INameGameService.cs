@@ -9,6 +9,7 @@ namespace WillowTree.NameGame.Core.Interfaces
 {
     public interface INameGameService
     {
-        Task<Profile[]> GetProfiles();
+        Task<IEnumerable<Profile>> GetProfiles();
+        Task<IEnumerable<Profile>> GetProfiles(string nameFilter);
     }
 }

@@ -21,6 +21,9 @@ namespace WillowTree.NameGame.Core
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 
+            //Override the registration of QuizService so it can be a dynamic interface (a new one for each resolve request)
+            CreatableTypes().StartingWith("QuizService").AsInterfaces().RegisterAsDynamic();
+
             var appStart = Mvx.Resolve<IMvxAppStart>();
             RegisterAppStart(appStart);
         }

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:padding="20dp"
+    local:cardUseCompatPadding="true"
+    local:cardCornerRadius="4dp"
+    local:cardElevation="4dp"
+    local:contentPadding="10dp">
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:orientation="vertical">
+    <DynamicImageView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:scaleType="centerCrop"
+      android:src="@drawable/willowtree_placeholder"
+      local:MvxBind="ImageUrl 'http:'+Profile.Headshot.Url; TintAnimation TintAnimation" />
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+      local:MvxBind="Text Profile.FirstName + ' ' + Profile.LastName; Visible Visible" />
+  </LinearLayout>
+      
+</android.support.v7.widget.CardView>
